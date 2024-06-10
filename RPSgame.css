@@ -1,0 +1,116 @@
+* {
+    margin-top: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color:rgba(212, 212, 212, 0.8);
+}
+
+/* Rock Paper Scissors Title */
+h1{
+    color:rgb(0, 0, 0);
+    font-size: 40px;
+    margin: 0px;
+    text-align: center;
+}
+
+/* Scoreboard styling */
+.scoreboard{
+    text-align: center;
+    margin: 4px;
+    font-size: 20px;
+}
+.score-table{
+    background-color: black;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    border-radius: 20px;
+}
+tr{
+    align-items: center;
+}
+th{
+    width: 200px;
+    height: 30px;
+}
+td{
+    width: 200px;
+    height: 60px;
+    font-size: 50px;
+    background-color: white;
+}
+#you-score{
+    border-bottom-left-radius: 20px;
+}
+#computer-score{
+    border-bottom-right-radius: 20px;
+}
+#you-column{
+    background-color: cornflowerblue;
+    border-top-left-radius: 20px;
+}
+#computer-column{
+    background-color: indianred;
+    border-top-right-radius: 20px;
+}
+
+/* Message */
+#message{
+    height: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Display area styling */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blue-display{
+    width:200px;
+    height: 200px;
+    background-color: rgba(100, 148, 237, 0.514);
+    border-radius: 20px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+#red-display{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(205, 92, 92, 0.516);
+    border-radius: 20px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.pick-display{
+    width: 80px;
+}
+
+/* Choice buttons */
+button{
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+.choices{
+    width: 126px;
+    height: 100px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin: 5px;
+}
+.choices:hover{
+    background-color: cornflowerblue;
+}
+.choices:active{
+    background-color: cornflowerblue;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

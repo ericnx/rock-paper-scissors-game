@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissors</title>
+        <link rel="icon" href="images/rock-paper-scissors.png" type="image/png">
+        <link rel="stylesheet" href="RPSgame.css">
+    </head>
+    <body>
+        <header><h1>Rock Paper Scissors</h1></header><br>
+
+        <div class="scoreboard">
+            <h3 class="scoreboard">Scoreboard</h3>
+            <table class="score-table">
+                <tr>
+                    <th id="you-column">You</th>
+                    <th id="computer-column">Computer</th>
+                </tr>
+                <tr>
+                    <td id="you-score">0</td>
+                    <td id="computer-score">0</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div id="message">Click a button below to play.</div>
+
+        <div class="container">
+            <div class="container" id="blue-display"></div>
+            <div class="container" id="red-display"></div>
+        </div>
+        
+        <div class="container">
+            <button class="choices" onclick="playGame('Rock')">
+                <img src="images/rock.png" alt="rock symbol" height="65">
+                <p>Rock</p>
+            </button>
+            <button class="choices" onclick="playGame('Paper')">
+                <img src="images/paper.png" alt="paper symbol" height="65">
+                <p>Paper</p>
+            </button>
+            <button class="choices" onclick="playGame('Scissors')">
+                <img src="images/scissors.png" alt="scissors symbol" height="65">
+                <p>Scissors</p>
+            </button>
+        </div>
+        <script src="RPSgame.js"></script>
+    </body>
+</html>
